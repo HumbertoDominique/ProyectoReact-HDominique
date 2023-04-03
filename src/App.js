@@ -1,10 +1,12 @@
-
-import './App.css';
+import "./App.css";
+import ItemList from "./ItemList/ItemList";
+import Navbar from "./Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      <Navbar />
+      <ItemList />
     </div>
   );
 }
