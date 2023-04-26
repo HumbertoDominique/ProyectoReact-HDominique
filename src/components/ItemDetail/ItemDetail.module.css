@@ -1,0 +1,91 @@
+.contenedorPadre {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbe5e6;
+  color: #30333a;
+}
+
+.contenedor {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedorTexto {
+  width: 60%;
+  height: 90%;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ffd6de;
+  border-radius: 5px;
+}
+
+.imgCardDetail {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  border-radius: 5px;
+  margin: 2rem;
+  border: 2px double #d9bba0;
+}
+
+.tituloCardDetail {
+  width: 100%;
+  position: relative;
+  color: #30333a;
+  background-color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px double #d9bba0;
+}
+
+.textoCardDetail {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+
+.precioCardDetail {
+  width: 100%;
+  position: bottom;
+  font-size: large;
+  background-color: white;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px double #d9bba0;
+}
+
+.botonArea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  border: none;
+  background-color: #e8c6c3;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+  height: 2rem;
+  font-size: medium;
+  color: #30333a;
+}

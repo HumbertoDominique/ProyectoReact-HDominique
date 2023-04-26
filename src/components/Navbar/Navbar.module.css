@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: aquamarine;
+  background-color: #e8c6c3;
 }
 
 .ul {
@@ -12,4 +12,21 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+  text-decoration: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: large;
+  color: white;
+}
+.activeLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: large;
+  color: white;
+  border-bottom: 4px double #ffffff;
 }

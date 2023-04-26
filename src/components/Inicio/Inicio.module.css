@@ -1,0 +1,45 @@
+.inicio {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #30333a;
+  font-size: large;
+  font-weight: 100;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.699),
+    rgba(255, 255, 255, 0.699)
+  );
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.imgInicio {
+  z-index: -1;
+  width: 100vw;
+  height: 88vh;
+  position: absolute;
+  object-fit: fill;
+}
+
+.logoBox {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.titulo {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: -90px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
