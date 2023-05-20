@@ -43,3 +43,11 @@
 .botonArea:hover {
   background-color: #ffd6de;
 }
+
+.loader {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

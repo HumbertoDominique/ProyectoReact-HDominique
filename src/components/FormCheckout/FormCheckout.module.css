@@ -1,0 +1,70 @@
+.contenedorPadre {
+  width: 100vw;
+  height: 88vh;
+  background-color: rgb(244, 228, 231);
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.685);
+  width: 70vw;
+  height: fit-content;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.formSuccess {
+  background-color: rgba(255, 255, 255, 0.685);
+  width: 70vw;
+  height: fit-content;
+  margin-top: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.space {
+  width: 100%;
+}
+.buttonAdd {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: palevioletred;
+  color: #30333a;
+}
+
+.buttonAdd:hover {
+  background-color: white;
+}
+
+.button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: pink;
+  color: #30333a;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.buttonSuccess {
+  width: 8rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  background-color: pink;
+  color: #30333a;
+}
+
+.buttonSuccess:hover {
+  background-color: white;
+}

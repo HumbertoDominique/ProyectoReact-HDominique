@@ -1,0 +1,24 @@
+.button {
+  width: 100px;
+  height: 2rem;
+  font-size: 10px;
+  margin-bottom: 10px;
+  background-color: palevioletred;
+  color: #30333a;
+}
+
+.buttonAdd {
+  width: 150px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  background-color: palevioletred;
+  color: #30333a;
+}
+
+.buttonAdd:hover {
+  background-color: white;
+}
+
+.button:hover {
+  background-color: white;
+}

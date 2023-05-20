@@ -1,0 +1,155 @@
+.contenedorPadre {
+  width: 100%;
+  background-color: #dbe5e6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: fit-content;
+  min-height: 88vh;
+}
+.infoCart {
+  width: 90vw;
+  height: 30vh;
+  background-color: #e8c6c3;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cartTitle {
+  width: 90%;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  color: #30333a;
+}
+.infoBlock {
+  background-color: white;
+  height: 6rem;
+  width: 20%;
+  border-radius: 10px;
+  margin: 12px;
+  text-align: center;
+  color: #30333a;
+}
+.displayCart {
+  width: 80vw;
+  background-color: #e8c6c3;
+  border-radius: 10px;
+  display: flex;
+  max-height: max-content;
+  min-height: 10vh;
+  margin-top: 20px;
+}
+
+.cartProducts {
+  width: 80%;
+  height: fit-content;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.tableProducts {
+  width: 100%;
+}
+.captionProducts {
+  height: 2rem;
+  margin-top: 1rem;
+}
+.imgProducts {
+  width: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  height: 50px;
+}
+.cartOptions {
+  width: 23%;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.502);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.buttonOptions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonPlus {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(53, 201, 53);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonMinus {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(215, 74, 74);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonAdd {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonDelete {
+  all: unset;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonOption {
+  width: 150px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: palevioletred;
+  color: #30333a;
+}
+
+.buttonOption:hover {
+  background-color: white;
+}
+
+.filasTabla {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: double black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d2bbd2;
+}

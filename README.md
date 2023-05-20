@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# PROYECTO FINAL REACT JS CODERHOUSE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## E-commerce Kora Accesorios.
 
-## Available Scripts
+Este proyecto consiste en la elaboración del e-commerce de una tienda de accesorios (Kora Accesorios) a través de la tecnología React JS.
 
-In the project directory, you can run:
+Fue creada con Create React App y está formada por una página de inicio, un listado de productos desplegados desde una base de datos, una barra de navegación que permite filtrar los productos de acuerdo a params en los endpoints, una vista deplegable del detalle de cada producto con botones de ejecución de funciones y renderizado condicional.
 
-### `npm start`
+Adicionalmente se trabajó el concepto de un carrito de compras, que permita visualizar los artículos añadidos, calcule el precio total y permita la interacción con el usuario modificando las cantidades de los productos directamente desde el carrito. Posteriormente se simula un formulario simple que recoge la data y la almacena en formato de Orden de compra, guardando los datos del cliente, su selección de productos, fecha de solicitud y código único para seguimiento del proceso.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ¿Como clonar este repositorio?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+https://github.com/HumbertoDominique/ProyectoReact-HDominique.git
+```
 
-### `npm test`
+## ¿Qué necesito para ejecutar este proyecto?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Dependencias que debes instalar:`
 
-### `npm run build`
+- Formik
+- Yup
+- SweetAlert2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Variables de entorno:`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Las variables de entorno son requeridas dado que el proyecto exporta y gestiona los productos y órdenes de compra directamente desde la base de datos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para esto, deberás crear un archivo .env y asignarle las siguientes variables de entorno:
 
-### `npm run eject`
+- apiKey: REACT_APP_APIKEY,
+- authDomain: REACT_APP_AUTHDOMAIN,
+- projectId: REACT_APP_PROYECTID,
+- storageBucket: REACT_APP_STORAGEBUCKET,
+- messagingSenderId: REACT_APP_MESSAGINGSENDERID,
+- appId: REACT_APP_APPID,
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `Formato tipo de los productos a gestionar:`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto requiere que los productos contentan los siguientes datos para su óptimo funcionamiento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- title : Nombre del producto.
+- description : Breve Descripción.
+- price : Precio.
+- stock : Unidades disponibles.
+- category : Categoría:
+- img : Imagen del producto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+!["esta es la imagen de react"](/public/logo192.png)

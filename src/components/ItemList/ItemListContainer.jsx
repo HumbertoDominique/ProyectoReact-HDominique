@@ -1,7 +1,10 @@
 import ItemList from "./ItemList";
-import { products } from "../../productsMock";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { db } from "../../firebaseConfig";
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { HashLoader } from "react-spinners";
+import styles from "./ItemList.module.css";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -9,20 +12,45 @@ const ItemListContainer = () => {
   const { categoryName } = useParams();
 
   useEffect(() => {
-    const productsFiltered = products.filter(
-      (prod) => prod.category === categoryName
-    );
+    let consulta;
+    const itemCollection = collection(db, "products");
 
-    const task = new Promise((resolve, reject) => {
-      resolve(categoryName ? productsFiltered : products);
-    });
+    if (categoryName) {
+      const itemCollectionFiltered = query(
+        itemCollection,
+        where("category", "==", categoryName)
+      );
 
-    task.then((res) => setItems(res)).catch((err) => console.log(err));
+      consulta = itemCollectionFiltered;
+    } else {
+      consulta = itemCollection;
+    }
+
+    getDocs(consulta)
+      .then((res) => {
+        const products = res.docs.map((prod) => {
+          return {
+            ...prod.data(),
+            id: prod.id,
+          };
+        });
+
+        setItems(products);
+      })
+      .catch((err) => console.log(err));
   }, [categoryName]);
 
   return (
     <div>
-      <ItemList items={items} />
+      {items.length === 0 ? (
+        <div>
+          <div className={styles.loader}>
+            <HashLoader color="#d74a4a" />
+          </div>
+        </div>
+      ) : (
+        <ItemList items={items} />
+      )}
     </div>
   );
 };
